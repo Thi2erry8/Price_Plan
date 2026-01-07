@@ -7,6 +7,12 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -24,17 +30,29 @@
         box-sizing: border-box;
       }
       header {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 50px 20px;
+      }
+      header p {
+        margin-top: 10px;
+        color: #616161;
+        width: 50%;
+        text-align: center;
       }
       body {
         overflow-x: hidden;
+        font-family: "Be Vietnam Pro", sans-serif;
       }
       .plans-container {
         height: 100vh;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         width: 100vw;
+        margin-bottom: 2em;
       }
       .info {
         display: flex;
@@ -42,7 +60,7 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 20%;
+        width: 18%;
       }
       .price,
       .description,
@@ -55,14 +73,44 @@
       }
       .price {
         height: 30%;
+        gap: 1em;
+      }
+      .price h1 {
+        font-size: 3em;
       }
       .category {
+        color: #263fa9;
+        font-size: 0.8em;
+      }
+      .sequence {
+        color: #616161;
+        font-size: 0.8em;
       }
       .description {
         height: 60%;
+        justify-content: space-around;
       }
       .plan {
         height: 10%;
+        color: #263fa9;
+      }
+      .info.active {
+        background-color: #121826;
+        color: white;
+        border-radius: 16px;
+        overflow: hidden;
+        .category {
+          color: white;
+          background-color: #263fa9;
+          padding: 0.2em 1em;
+          border-radius: 25px;
+        }
+        .plan {
+          background-color: #7c4f1e;
+          color: white;
+          padding: 0.5em 2em;
+          cursor: pointer;
+        }
       }
     </style>
   </head>
@@ -171,16 +219,18 @@
           <p>05</p>
           <p>500 GB</p>
           <p>15</p>
-          <p>-</p>
+          <p><i class="ri-check-fill"></i></p>
           <p>-</p>
           <p>-</p>
           <p>-</p>
           <p>-</p>
         </div>
-        <div class="plan"></div>
+        <div class="plan">
+          <p>Get Started <i class="ri-arrow-right-line"></i></p>
+        </div>
       </div>
 
-      <div class="info">
+      <div class="info active">
         <div class="price">
           <p class="category">Popular</p>
           <h1>$99</h1>
@@ -190,11 +240,11 @@
           <p>10</p>
           <p>1 TB</p>
           <p>Unlimited</p>
-          <p>-</p>
-          <p>-</p>
-          <p>-</p>
-          <p>-</p>
-          <p>-</p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
         </div>
         <div class="plan">
           <p>Get Started <i class="ri-arrow-right-line"></i></p>
