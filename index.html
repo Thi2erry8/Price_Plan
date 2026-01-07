@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -23,6 +26,43 @@
       header {
         text-align: center;
         margin: 50px 20px;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .plans-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+      }
+      .price,
+      .description,
+      .plan {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .price {
+        height: 30%;
+      }
+      .category {
+      }
+      .description {
+        height: 60%;
+      }
+      .plan {
+        height: 10%;
       }
     </style>
   </head>
@@ -85,7 +125,102 @@
       </p>
     </header>
     <div class="plans-container">
-      <!-- Your pricing table code goes here -->
+      <div class="info">
+        <div class="price"></div>
+        <div class="description">
+          <p>Website number</p>
+          <p>Server storage</p>
+          <p>Database</p>
+          <p>Unmetered Bandwidth</p>
+          <p>SSD Disk</p>
+          <p>VCPUS Fontworld</p>
+          <p>Worldpress install</p>
+          <p>Server speed</p>
+        </div>
+        <div class="plan"></div>
+      </div>
+
+      <div class="info">
+        <div class="price">
+          <p class="category">free</p>
+          <h1>$0</h1>
+          <p class="sequence">Per month</p>
+        </div>
+        <div class="description">
+          <p>01</p>
+          <p>100 GB</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+        </div>
+        <div class="plan">
+          <p>Get Started <i class="ri-arrow-right-line"></i></p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="price">
+          <p class="category">Team</p>
+          <h1>$59</h1>
+          <p class="sequence">Per month</p>
+        </div>
+        <div class="description">
+          <p>05</p>
+          <p>500 GB</p>
+          <p>15</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+        </div>
+        <div class="plan"></div>
+      </div>
+
+      <div class="info">
+        <div class="price">
+          <p class="category">Popular</p>
+          <h1>$99</h1>
+          <p class="sequence">Per month</p>
+        </div>
+        <div class="description">
+          <p>10</p>
+          <p>1 TB</p>
+          <p>Unlimited</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+        </div>
+        <div class="plan">
+          <p>Get Started <i class="ri-arrow-right-line"></i></p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="price">
+          <p class="category">Enterprise</p>
+          <h1>$299</h1>
+          <p class="sequence">Per month</p>
+        </div>
+        <div class="description">
+          <p>Unlimited</p>
+          <p>Unlimited</p>
+          <p>Unlimited</p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+          <p><i class="ri-check-fill"></i></p>
+        </div>
+        <div class="plan">
+          <p>Get Started <i class="ri-arrow-right-line"></i></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
